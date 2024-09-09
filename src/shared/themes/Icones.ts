@@ -1,16 +1,16 @@
 import { createTheme} from '@mui/material';
 import { cyan, yellow } from '@mui/material/colors';
 
-export const LigthTheme = createTheme({
+export const IconesTheme = createTheme({
   palette: {
     primary: {
-      main: yellow[700],
-      dark: yellow[800],
-      light: yellow[500],
+      main: '#ffffff',
+      dark: '#ffffff',
+      light: '#dedede',
       contrastText: "#ffffff",
     },
     secondary: {
-      main: cyan[500],
+      main: '#0c4861',
       dark: cyan[400],
       light: cyan[300],
       contrastText: "#ffffff",

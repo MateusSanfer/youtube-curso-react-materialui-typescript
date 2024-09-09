@@ -1,13 +1,19 @@
 import { BrowserRouter } from "react-router-dom";
 import { AppRoutes } from "./routes";
-import { ThemeProvider } from "@mui/material";
-import { LigthTheme } from "./shared/themes";
+import { AppThemeProvider, DrawerProvider } from "./shared/contexts";
+import { MenuLateral } from "./shared/components";
+
 export const App = () => {
   return (
-    <ThemeProvider theme={LigthTheme}>
+    <AppThemeProvider>
+      <DrawerProvider>
     <BrowserRouter>
+    <MenuLateral>
       <AppRoutes />
+
+    </MenuLateral>
     </BrowserRouter>
-    </ThemeProvider>
+    </DrawerProvider>
+    </AppThemeProvider>
   );
 };
